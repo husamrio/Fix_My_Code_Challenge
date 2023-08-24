@@ -8,13 +8,13 @@
 
 result = []
 ARGV.each do |arg|
-    # skip if not integer
+    # if not an integer skip
     next if arg !~ /^-?[0-9]+$/
 
-    # convert to integer
+    # convert to an integer
     i_arg = arg.to_i
     
-    # insert result at the right position
+   # Insert the result at the apropriate position
     is_inserted = false
     i = 0
     l = result.size
